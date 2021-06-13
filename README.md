@@ -5,3 +5,4 @@ Life is hard, nothing is perfect. I was given these 2 raw datasets and my task w
 
 ### Create Virtual Environment and install dependencies
 - `c:\>C:\Python39\python -m venv C:\projects\ConceptTagHistory\venv`
+- pip install requirements.txt

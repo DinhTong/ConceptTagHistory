@@ -1,7 +1,6 @@
 import pandas as pd
 from pathlib import Path
 from tabulate import tabulate
-from prettytable import PrettyTable
 
 def read_tags(csv_file):
     tag_file = Path(csv_file)
@@ -15,13 +14,10 @@ def get_data_filenames():
     return files
 
 def data_files_to_display(data_files):
-    display_files = PrettyTable()
-    display_files.field_names = ["Name", "Path"]
-    display_files.align["Name"] = "l"
-    display_files.align["Path"] = "l"
+    data = []
     for data_file in data_files:
-        display_files.add_row([data_file.name, data_file.absolute()])
-    print(display_files)
+        data.append([data_file.name, str(data_file.absolute())])
+    print(tabulate(data, tablefmt='psql', headers=['Name', 'Path']))
 
 if __name__ == '__main__':
     data_files = get_data_filenames()

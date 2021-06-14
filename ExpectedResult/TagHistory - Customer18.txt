@@ -1,0 +1,39 @@
++--------------------------------+-------------------------------------------------------------------+
+| Name                           | Path                                                              |
++--------------------------------+-------------------------------------------------------------------+
+| MarchCustomerTagHistoryLog.csv | C:\projects\ConceptTagHistory\data\MarchCustomerTagHistoryLog.csv |
+| Tag.csv                        | C:\projects\ConceptTagHistory\data\Tag.csv                        |
++--------------------------------+-------------------------------------------------------------------+
+Customer ID to lookup?
+18
++-----+--------------+-----------+--------------------------------------+---------------------+
+|     |   CustomerID | Type      | Tag                                  | CreationDateTime    |
+|-----+--------------+-----------+--------------------------------------+---------------------|
+| 383 |           18 | INVENTORY | OP CALL PAYER FOR STATUS & WEB ERROR | 2020-11-04 05:31:19 |
+| 380 |           18 | INVENTORY | OP CALL PAYER FOR STATUS & WEB ERROR | 2020-11-04 05:31:19 |
+| 379 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-11-03 05:30:54 |
+| 377 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-11-03 05:30:54 |
+| 373 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-11-03 05:30:54 |
+| 374 |           18 | INVENTORY | UNRELEASED - BIL                     | 2020-11-01 17:21:18 |
+| 371 |           18 | INVENTORY | UNRELEASED - BIL                     | 2020-11-01 17:21:18 |
+| 369 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-09-29 05:07:58 |
+| 367 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-09-11 04:31:52 |
+| 365 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-06-19 04:16:28 |
+| 363 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-06-11 04:21:57 |
+| 358 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-05-19 13:09:47 |
+| 361 |           18 | INVENTORY | MEDICARE MANAGED CARE                | 2020-05-19 13:09:47 |
+| 357 |           18 | INVENTORY | PROSPECT                             | 2020-04-10 04:33:36 |
+| 355 |           18 | INVENTORY | PROSPECT                             | 2020-04-10 04:33:36 |
+| 352 |           18 | INVENTORY | PROSPECT                             | 2020-04-10 04:33:36 |
+| 351 |           18 | INVENTORY | NO CLAIMS - ALTA                     | 2020-04-07 17:05:35 |
+| 349 |           18 | INVENTORY | NO CLAIMS - ALTA                     | 2020-04-07 17:05:35 |
+| 345 |           18 | INVENTORY | NO CLAIMS - ALTA                     | 2020-04-07 17:05:35 |
+| 343 |           18 | INVENTORY | UNRELEASED_PAS                       | 2020-04-05 17:24:09 |
+| 346 |           18 | INVENTORY | UNRELEASED_PAS                       | 2020-04-05 17:24:09 |
+| 389 |           18 | INVENTORY | DISCHARGED NOT BILLED                | 2020-04-04 18:03:00 |
+| 393 |           18 | INVENTORY | DISCHARGED NOT BILLED                | 2020-04-04 18:03:00 |
+| 387 |           18 | INVENTORY | UNRELEASED_PAS                       | 2020-03-05 17:05:08 |
+| 390 |           18 | INVENTORY | UNRELEASED_PAS                       | 2020-03-05 17:05:08 |
+| 385 |           18 | INVENTORY | IN-HOUSE                             | 2020-03-04 17:02:27 |
+| 341 |           18 | INVENTORY | IN-HOUSE                             | 2020-03-02 17:17:15 |
++-----+--------------+-----------+--------------------------------------+---------------------+

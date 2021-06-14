@@ -22,7 +22,7 @@ For me it's
 - `python src/main.py`
 
 And.... YAY!
-When you are done deativate the `venv`
+When you are done deactivate the `venv`
 - `deactivate`
 
 ## Windows

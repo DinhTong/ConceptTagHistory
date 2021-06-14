@@ -28,12 +28,10 @@ if __name__ == '__main__':
     history_frame = read_tags(next(filter(lambda x: x.name.endswith('HistoryLog.csv'), data_files), None))
     merged = history_frame.merge(tags_frame, how='inner', left_on='HistoryLogID', right_on='TagHistoryLogID')
     customer_records = pd.DataFrame(merged, columns=['CustomerID', 'Type', 'Tag', 'CreationDateTime'])
-
-    print('Customer ID to lookup?')
-    customer_id = int(input())
-
-    customer_records = customer_records[customer_records["CustomerID"] == customer_id]
-    customer_records['CreationDateTime'] = pd.to_datetime(customer_records['CreationDateTime'])
-    customer_records.sort_values(by=['CreationDateTime'], inplace=True, ascending=False)
-
-    print(tabulate(customer_records, headers='keys', tablefmt='psql'))
+    by_id = customer_records.groupby("CustomerID")
+    for customer_id, frame in by_id:
+        with pd.option_context('mode.chained_assignment', None):
+            customer_records_by_id = customer_records[customer_records["CustomerID"] == customer_id]
+            customer_records_by_id['CreationDateTime'] = pd.to_datetime(customer_records_by_id['CreationDateTime'])
+            customer_records_by_id.sort_values(by=['CreationDateTime'], inplace=True, ascending=False)
+            print(tabulate(customer_records_by_id, headers='keys', tablefmt='psql'))
